@@ -9,16 +9,21 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number" pattern="^[1-9]+[0-9]*$" id="principal">  <br/>
+        Amount <input type="number" min="1" id="principal">  <br/>
 
-        Interest Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step="0.25" value="10.25" >  <br/>
+        <span id="notify">
+
+        </span>
+
+        Interest Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step="0.25" value="10.25" > 
         <span id="rate_val">
             10.25%
         </span>
 
-      
+        <br>
 
-        No. of Years <br/>
+
+        No. of Years 
         <select name="" id="years">
             <option value="1">1</option>
             <option value="2">2</option>

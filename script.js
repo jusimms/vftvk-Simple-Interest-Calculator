@@ -6,7 +6,16 @@ function compute()
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
 
-    document.getElementById("result").innerHTML = `If you deposit <span style="background-color: yellow">${principal}</span> at an interest rate of <span style="background-color: yellow">${rate}</span>. You will recieve an amount of <span style="background-color: yellow">${interest}</span>, in the year <span style="background-color: yellow">${year}</span>`;
+    
+
+    if (principal < 1 ) {
+        document.getElementById("notify").innerHTML = '<strong style="color: red">Enter a positive number.</strong><br>'
+    } else {
+        document.getElementById("result").innerHTML = `If you deposit <span style="background-color: yellow">${principal}</span> at an interest rate of <span style="background-color: yellow">${rate}</span>. You will recieve an amount of <span style="background-color: yellow">${interest}</span>, in the year <span style="background-color: yellow">${year}</span>`;
+    }
+
+    
+
 }
         
 function updateRate() 
@@ -15,6 +24,4 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
 
-function principalValidation() {
-    if ()
-}
+
