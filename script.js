@@ -1,3 +1,7 @@
+// FUNCTIONS
+
+// Function that controls everything after the compute button is pressed. 
+
 function compute()
 {
     var principal = document.getElementById("principal").value;
@@ -17,7 +21,8 @@ function compute()
     
 
 }
-        
+
+// Function to update the rate value.
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
