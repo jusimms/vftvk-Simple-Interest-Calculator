@@ -11,7 +11,7 @@ function compute()
     if (principal < 1 ) {
         document.getElementById("notify").innerHTML = '<strong style="color: red">Enter a positive number.</strong><br><br>'
     } else {
-        document.getElementById("result").innerHTML = `<br><br>If you deposit <span style="background-color: yellow">${principal}</span>, at an interest rate of <span style="background-color: yellow">${rate}</span>. You will recieve an amount of <span style="background-color: yellow">${interest}</span>, in the year <span style="background-color: yellow">${year}.</span>`;
+        document.getElementById("result").innerHTML = `<br><br>If you deposit <span style="background-color: yellow">${principal}</span>, at an interest rate of <span style="background-color: yellow">${rate}</span>. You will recieve an amount of <span style="background-color: yellow">${interest}</span>, in the year <span style="background-color: yellow">${year}</span>.`;
     }
 
     
