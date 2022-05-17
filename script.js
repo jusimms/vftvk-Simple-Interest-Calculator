@@ -13,7 +13,8 @@ function compute()
     
 
     if (principal < 1 ) {
-        document.getElementById("notify").innerHTML = '<strong style="color: red">Enter a positive number.</strong><br><br>'
+        alert('Enter a postive number.')
+        // document.getElementById("notify").innerHTML = '<strong style="color: red">Enter a positive number.</strong><br><br>'
     } else {
         document.getElementById("result").innerHTML = `<br><br>If you deposit <span style="background-color: yellow">${principal}</span>, at an interest rate of <span style="background-color: yellow">${rate}</span>. You will recieve an amount of <span style="background-color: yellow">${interest}</span>, in the year <span style="background-color: yellow">${year}</span>.`;
     }
@@ -26,7 +27,7 @@ function compute()
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=`${rateval}%`;
 }
 
 
